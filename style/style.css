@@ -42,7 +42,6 @@ header {
   justify-content: space-between;
   color: var(--text-color);
   padding: 10px;
-  z-index: 2000;
 }
 
 .hamburger_menu {
@@ -55,7 +54,7 @@ header {
   top: -1000%;
   color: #fff;
   transition-duration: 0.4s;
-  z-index: 0;
+  z-index: -1;
 }
 
 .openHamb {
