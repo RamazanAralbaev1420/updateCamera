@@ -729,6 +729,42 @@ main {
     display: none;
   }
 
+  #updateCamera {
+    width: 100%;
+    height: 400px;
+    background-image: url('../assets/sectopn2-back.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    /* margin: 30px 0; */
+  }
+
+  .person-comment {
+    width: 66.5%;
+    margin-left: 7px;
+    background-color: #f5f5f5;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  .updateCameraBlock {
+    background-color: #2d386f;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px 20px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translateY(-55%);
+    border-radius: 5px;
+  }
+
   .contact_number {
     display: none;
   }
@@ -763,6 +799,10 @@ main {
     background-color: var(--btn-back-color);
     color: #fff;
   }
+  .autoHeight {
+    height: 80px;
+    transition-duration: 0.5s;
+  }
 
   .assetsCamera-info {
     width: 45%;
@@ -789,6 +829,15 @@ main {
     align-items: center;
     background-color: var(--btn-back-color);
     color: #fff;
+  }
+  #updateCamera {
+    width: 100%;
+    height: 600px;
+    background-image: url('../assets/sectopn2-back.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    /* margin: 30px 0; */
   }
 }
 @media (min-width: 767.98px) {
@@ -829,6 +878,15 @@ main {
     max-width: 100%;
     margin: auto;
     padding: 0 10px;
+  }
+  #updateCamera {
+    width: 100%;
+    height: 700px;
+    background-image: url('../assets/sectopn2-back.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    /* margin: 30px 0; */
   }
 }
 @media (min-width: 1199.98px) {
