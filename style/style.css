@@ -778,6 +778,18 @@ main {
     margin: auto;
     padding: 0 15px;
   }
+  .main_btn a {
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btn-back-color);
+    color: #fff;
+  }
 }
 @media (min-width: 767.98px) {
   html {
@@ -795,6 +807,18 @@ main {
 
   .assetsCamera-info {
     width: 30%;
+  }
+  .main_btn a {
+    width: 200px;
+    height: 60px;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btn-back-color);
+    color: #fff;
   }
 }
 @media (min-width: 991.98px) {
