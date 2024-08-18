@@ -33,7 +33,7 @@ header {
   top: 0px;
   left: 0;
   background-color: transparent;
-  z-index: 2000;
+  z-index: 4000;
 }
 
 .header {
@@ -55,10 +55,6 @@ header {
   color: #fff;
   transition-duration: 0.4s;
   z-index: -1;
-}
-
-.openHamb {
-  top: 99%;
 }
 
 .hamburger {
@@ -135,6 +131,9 @@ header {
   top: 0;
 }
 
+.openHamb {
+  top: 99%;
+}
 .logo {
   font-size: 1.5rem;
   font-weight: 600;
@@ -806,7 +805,7 @@ main {
   }
 
   header {
-    background-color: #2d386f !important;
+    background-color: #2d386f;
     padding: 10px 0;
   }
 
@@ -1014,7 +1013,7 @@ main {
   }
 
   header {
-    background-color: transparent !important;
+    background-color: transparent;
     padding: 10px 0;
   }
 
