@@ -83,28 +83,57 @@ header {
   flex-direction: column;
 }
 
-.top-line,
+/* .top-line,
 .middle-line,
 .bottom-line {
   width: 35px;
   height: 4px;
   background-color: #fff;
   transition-duration: 0.3s;
-}
-
-/* .middle-line {
-  display: none;
-}
+} */
 
 .top-line {
-  rotate: 45deg;
-  transform: translateY(6px);
+  width: 35px;
+  height: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  position: relative;
+  transition-duration: 0.4s;
 }
 
-.bottom-line {
-  rotate: -45deg;
-  transform: translateY(-6px);
-} */
+.top-line::before {
+  content: '';
+  position: absolute;
+  width: 35px;
+  height: 4px;
+  background-color: #fff;
+  top: -10px;
+  left: 0;
+  transition-duration: 0.4s;
+}
+.top-line::after {
+  content: '';
+  position: absolute;
+  width: 35px;
+  height: 4px;
+  background-color: #fff;
+  top: 10px;
+  left: 0;
+  transition-duration: 0.4s;
+}
+
+.top-line.openHamb {
+  background-color: transparent;
+}
+.top-line.openHamb::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.top-line.openHamb::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
 
 .logo {
   font-size: 1.5rem;

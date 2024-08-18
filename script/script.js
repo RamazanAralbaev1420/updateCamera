@@ -20,28 +20,19 @@ const accardion_btn = document.querySelectorAll('.accardion-btn');
 const accardion_body = document.querySelectorAll('.accardion-body');
 const hamb_btn = document.querySelector('.hamb_btn');
 const top_line = document.querySelector('.top-line');
-const middle_line = document.querySelector('.middle-line');
-const bottom_line = document.querySelector('.bottom-line');
+
 const mobile_nav_links = document.querySelector('.mobile_nav_links');
 const hamburger_menu = document.querySelector('.hamburger_menu');
 
 hamb_btn.addEventListener('click', () => {
+  console.log('asdf');
+
   console.log(!hamburger_menu.classList.contains('openHamb'));
 
-  if (!hamburger_menu.classList.contains('openHamb')) {
-    hamburger_menu.classList.add('openHamb');
-    top_line.style.rotate = '45deg';
-    top_line.style.transform = 'translateY(6px)';
-    bottom_line.style.rotate = '-45deg';
-    bottom_line.style.transform = 'translateY(-6px)';
-    middle_line.style.display = 'none';
+  if (!top_line.classList.contains('openHamb')) {
+    top_line.classList.add('openHamb');
   } else {
-    top_line.style.rotate = '0deg';
-    top_line.style.transform = 'translateY(0px)';
-    bottom_line.style.rotate = '0deg';
-    bottom_line.style.transform = 'translateY(0px)';
-    middle_line.style.display = 'flex';
-    hamburger_menu.classList.remove('openHamb');
+    top_line.classList.remove('openHamb');
   }
 });
 
