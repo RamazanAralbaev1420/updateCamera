@@ -805,7 +805,7 @@ main {
   }
 
   header {
-    background-color: #2d386f;
+    background-color: #2d386f !important;
     padding: 10px 0;
   }
 
@@ -1013,7 +1013,7 @@ main {
   }
 
   header {
-    background-color: transparent;
+    background-color: transparent !important;
     padding: 10px 0;
   }
 
